@@ -41,7 +41,18 @@ public class MainActivity extends Activity {
 					return;
 				}
 				
-				
+				// Get average salary and check for a valid value
+				final EditText averageSalaryInput = (EditText) findViewById(R.id.input_average_salary);
+				final int averageSalary;
+				try {
+					averageSalary = Integer.parseInt(averageSalaryInput.getText().toString());
+				} catch (final NumberFormatException e) {
+					Toast.makeText(getApplicationContext(), getResources().getString(R.string.invalid_number_of_employees), Toast.LENGTH_LONG).show();
+					return;
+				}
+				if ( averageSalary < 1) {
+					Toast.makeText(getApplicationContext(), getResources().getString(R.string.invalid_number_of_employees), Toast.LENGTH_LONG).show();
+				}
 				
 				startActivity(i);
 			}

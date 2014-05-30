@@ -18,32 +18,28 @@
         android:id="@+id/btn_start_meeting"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="94dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_centerVertical="true"
         android:text="@string/start_meeting" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/input_average_salary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/input_number_of_employees"
         android:layout_below="@+id/textView2"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="18dp"
         android:ems="10"
         android:hint="@string/average_salary_hint"
-        android:inputType="numberDecimal" >
-
-        <requestFocus />
-    </EditText>
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/input_number_of_employees"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
+        android:layout_below="@+id/input_average_salary"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="@string/input_number_employee_hint"
         android:inputType="numberDecimal" />
