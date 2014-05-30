@@ -8,7 +8,7 @@ import android.widget.EditText;
 public class TimerActivity extends Activity {
 	public int var;
 	public int numberOfEmployees;
-	public int averageSalary = 4;
+	public int averageSalary;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +16,11 @@ public class TimerActivity extends Activity {
 		setContentView(R.layout.activity_timer);
 		
 		
+		
 //		var = numberOfEmployees * averageSalary;
 //		
-//	EditText test = (EditText) findViewById(R.id.test);
-//	test.setText("Test Test");
+		EditText test = (EditText) findViewById(R.id.test);
+		test.setText("Test Test");
 ////		
 //		
 		
