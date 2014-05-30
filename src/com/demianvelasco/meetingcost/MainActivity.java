@@ -54,6 +54,10 @@ public class MainActivity extends Activity {
 					Toast.makeText(getApplicationContext(), getResources().getString(R.string.invalid_number_of_employees), Toast.LENGTH_LONG).show();
 				}
 				
+				
+				//i.putExtra("numberOfEmployees", numberOfEmployees);
+				//i.putExtra("averageSalary", averageSalary);
+				
 				startActivity(i);
 			}
 			
