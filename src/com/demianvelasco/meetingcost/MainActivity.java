@@ -26,6 +26,10 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				
+				// Start counter
+				
+				
+				// Start button
 				final EditText numberOfEmployeesInput = (EditText) findViewById(R.id.numberOfEmployees);
 				final int numberOfEmployees;
 				
