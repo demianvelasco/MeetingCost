@@ -26,6 +26,10 @@
             android:name="com.demianvelasco.meetingcost.TimerActivity"
             android:label="@string/title_activity_timer" >
         </activity>
+        <activity
+            android:name="com.demianvelasco.meetingcost.LogActivity"
+            android:label="@string/title_activity_log" >
+        </activity>
     </application>
 
 </manifest>
