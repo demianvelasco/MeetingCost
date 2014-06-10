@@ -14,8 +14,10 @@
     
     <!-- Error strings -->
      <string name="invalid_number_of_employees">Invalid number of employees</string>
-     
+     <string name="invalid_average_salary">Invalid salary rate</string>
      <!-- Hints -->
-     <string name="input_number_employee_hint">Number of Employees</string>
-     <string name="average_salary_hint">Average Salary</string>
+     <string name="input_meeting_name_hint">Name the meeting</string>
+     <string name="input_number_employee_hint">Number of employees</string>
+     <string name="average_salary_hint">Average rate - hourly</string>
+     
 </resources>

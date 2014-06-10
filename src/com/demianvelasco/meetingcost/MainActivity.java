@@ -47,16 +47,23 @@ public class MainActivity extends Activity {
 				try {
 					averageSalary = Integer.parseInt(averageSalaryInput.getText().toString());
 				} catch (final NumberFormatException e) {
-					Toast.makeText(getApplicationContext(), getResources().getString(R.string.invalid_number_of_employees), Toast.LENGTH_LONG).show();
+					Toast.makeText(getApplicationContext(), getResources().getString(R.string.invalid_average_salary), Toast.LENGTH_LONG).show();
 					return;
 				}
+				
 				if ( averageSalary < 1) {
-					Toast.makeText(getApplicationContext(), getResources().getString(R.string.invalid_number_of_employees), Toast.LENGTH_LONG).show();
+					Toast.makeText(getApplicationContext(), getResources().getString(R.string.invalid_average_salary), Toast.LENGTH_LONG).show();
 				}
 				
+				// Get average salary and check for a valid value
+				final EditText meetingNameInput = (EditText) findViewById(R.id.name_meeting_input);				
+				String meetingName = meetingNameInput.getText().toString();
 				
-				//i.putExtra("numberOfEmployees", numberOfEmployees);
-				//i.putExtra("averageSalary", averageSalary);
+				
+				
+				i.putExtra("numberOfEmployees", numberOfEmployees);
+				i.putExtra("averageSalary", averageSalary);
+				i.putExtra("meetingName", meetingName);
 				
 				startActivity(i);
 			}
