@@ -20,4 +20,6 @@
      <string name="input_number_employee_hint">Number of employees</string>
      <string name="average_salary_hint">Average rate - hourly</string>
      
+     <!-- Timer -->
+      <string name="timer_null">00:00</string>
 </resources>
